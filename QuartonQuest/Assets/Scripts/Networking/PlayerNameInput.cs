@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
@@ -39,7 +36,7 @@ namespace Networking {
 
             PhotonNetwork.NickName = playerName;
 
-            //pla
+            PlayerPrefs.SetString(PlayerPrefsNameKey, playerName);
         }
     }
 }
