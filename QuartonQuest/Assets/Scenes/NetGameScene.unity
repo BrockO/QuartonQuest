@@ -335,7 +335,7 @@ PrefabInstance:
     - target: {fileID: 209769502414534221, guid: b8b37ee8186bedf48820ec822770eace,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.49
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 209769502414534221, guid: b8b37ee8186bedf48820ec822770eace,
         type: 3}
@@ -847,6 +847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052541957061042578, guid: 89aed058c013fff4f96cb18f2d5af204,
+        type: 3}
+      propertyPath: IsNetworkedGame
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9052541957061042580, guid: 89aed058c013fff4f96cb18f2d5af204,
         type: 3}
