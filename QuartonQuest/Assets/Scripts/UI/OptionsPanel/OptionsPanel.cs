@@ -7,22 +7,13 @@ using Photon.Pun;
 
 public class OptionsPanel : MonoBehaviour
 {
-    public bool OptionsPanelShowing
-    {
-        get
-        {
-            return Panel.activeInHierarchy;
-        }
-        set
-        {
-            Panel.SetActive(value);
-        }
-    }
+    public static bool OptionsPanelShowing = false;
     public GameObject Panel;
     public AudioMixer audioMixer;
     public bool IsNetworkedGame = false;
 
-    void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -48,15 +39,17 @@ public class OptionsPanel : MonoBehaviour
     public void OpenPanel()
     {
         Debug.Log("Opening options panel");
-        OptionsPanelShowing = true;
+        Panel.SetActive(true);
         // Time.timeScale = 0f;
+        OptionsPanelShowing = true;
     }
 
     public void ClosePanel()
     {
         Debug.Log("Closing options panel");
-        OptionsPanelShowing = false;
+        Panel.SetActive(false);
         // Time.timeScale = 1f;
+        OptionsPanelShowing = false;
     }
 
     public void QuitMatch()
